@@ -24,7 +24,7 @@ public class DeviceManager {
 	}
 
 	private void callCApplication(String command, String intensity) {
-		String cmd = String.format("./infrared %s %s %s %s", channel, output, command, intensity);
+		String cmd = String.format("/home/pi/LCCInstallScript/infrared %s %s %s %s", channel, output, command, intensity);
 		try {
 			Runtime.getRuntime().exec(cmd);
 		} catch (IOException e) {
